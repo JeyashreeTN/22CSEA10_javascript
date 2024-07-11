@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of circle</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        const circle = {
+            radius: 5
+        };
+
+        function calcArea(circle) {
+            const r = circle.radius;
+            const area = Math.PI * r * r;
+            return area;
+        }
+
+        document.getElementById("demo").innerHTML = "The area is: " + calcArea(circle);
+    </script>
+</body>
+</html>
+
