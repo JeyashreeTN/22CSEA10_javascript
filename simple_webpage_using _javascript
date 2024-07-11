@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Welcome Page</title>
+</head>
+<body>
+
+<script>
+   
+    const userName = prompt("Please enter your name:");
+   
+   
+    alert("Welcome, " + userName + "!");
+   
+   
+    const currentDate = new Date();
+    const options = { month: 'long', day: 'numeric', year: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+   
+    document.write("<p>Current Date: " + formattedDate + "</p>");
+   
+   
+    const lastModifiedDate = new Date(document.lastModified);
+    const formattedLastModifiedDate = lastModifiedDate.toLocaleDateString('en-US', options);
+   
+    document.write("<p>Last Modified Date: " + formattedLastModifiedDate + "</p>");
+</script>
+
+</body>
+</html>
