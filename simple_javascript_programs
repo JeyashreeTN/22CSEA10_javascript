@@ -1,0 +1,29 @@
+<head>
+    <title>script</title>
+</head>
+<body>
+    <script>
+        function countWords() {
+            var sen = document.getElementById("t1").value;
+            var words = sen.split(" ");
+            let arr = [];
+            var count = 0;
+            for (i = 0; i < words.length; i++) {
+                var length = 3;
+                if (words[i].length === length) {
+                    count += 1;
+                    arr.push(words[i]);
+                }
+            }
+            document.getElementById("dem").innerHTML = "Count is: " + count;
+            document.getElementById("demo").innerHTML = "The 3 letters words are: " + arr.join(", ");
+        event.preventDefault(); }
+    </script>
+    <form>
+        Enter a sentence:<input type="text" id="t1">
+        <button onclick="countWords()">Click</button>
+        <h1 id="demo"></h1>
+        <h2 id="dem"></h2>
+    </form>
+</body>
+</html>
