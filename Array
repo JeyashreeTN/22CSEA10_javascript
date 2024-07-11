@@ -1,0 +1,33 @@
+</head>
+<html>
+ <head>
+ <title>Array operations</title>
+<style>
+ .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+</style>
+ <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqM_sExF70zPIYRpbbVXMTIhal1EGw5pXP9WzKUykJ4IMQIrD7JpGUFZ1dZAoFP46k34&usqp=CAU">
+<div class="container">
+ <script>
+ let number=[2,7,3,5,9,6];
+ var num = number.sort();
+ document.write("The array is "+num+"<br>");
+ let n = num.length;
+ document.write("Second smallest element is "+num[1]+"<br>");
+ document.write("Second largest element is "+num[n-2]+"\n");
+ </script>
+</div>
+ </body>
+</html>
+
